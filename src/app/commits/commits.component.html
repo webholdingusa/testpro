@@ -1,0 +1,8 @@
+<div *ngFor="let commit of commits">
+  <h2>
+    {{commit.commit.message}}
+  </h2>
+  <p>by {{commit.author.login}}</p>
+
+  <a href="{{commit.html_url}}">Read full commmit</a>
+</div>
